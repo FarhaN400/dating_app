@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../commons/My_Info.dart';
 import '../commons/opaque_image.dart';
+import '../commons/profile_big_card.dart';
 
 class ProfilePage extends StatelessWidget{
   @override
@@ -42,6 +43,20 @@ class ProfilePage extends StatelessWidget{
                flex: 5,
                child: Container(
                  color: Colors.white,
+                 child: Table(
+                   children: [
+                     TableRow(
+                        children: [
+                          ProfileInfoBigCard(
+                            firstText: "13",
+                            secondText: "New Matches",
+                          ),
+                        ],
+                     ),
+                     TableRow(),
+                     TableRow(),
+                   ],
+                 ),
                ),
              ),
            ],

@@ -15,6 +15,7 @@ class MyInfo extends StatelessWidget{
           children: [
             RadialProgress(
               width: 4,
+              goalCompleted: 0.81,
               child: RoundedImage(
                 imgPath : "assets/image/anne.jpeg",
                 size: Size.fromWidth(120.0),
